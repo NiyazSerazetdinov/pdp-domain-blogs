@@ -1,8 +1,18 @@
-# Rails Base
+# PDP Domain Blogs
 
-[![Build Status](https://semaphoreci.com/api/v1/fs/rails-base/branches/master/shields_badge.svg)](https://semaphoreci.com/fs/rails-base)
-[![Test Coverage](https://codeclimate.com/github/fs/rails-base/badges/coverage.svg)](https://codeclimate.com/github/fs/rails-base)
-[![Code Climate](https://codeclimate.com/github/fs/rails-base.png)](https://codeclimate.com/github/fs/rails-base)
+Pet project for PDP
+
+## CI
+
+[Semaphore](https://semaphoreci.com/NiyazSerazetdinov/pdp-domain-blogs)
+
+## Staging
+
+[Heroku](https://pdp-domains-blogs.herokuapp.com)
+
+[![Build Status](https://semaphoreci.com/api/v1/NiyazSerazetdinov/pdp-domain-blogs/branches/master/badge.svg)](https://semaphoreci.com/NiyazSerazetdinov/pdp-domain-blogs)
+[![Test Coverage](https://codeclimate.com/github/NiyazSerazetdinov/pdp-domain-blogs/badges/coverage.svg)](https://codeclimate.com/github/NiyazSerazetdinov/pdp-domain-blogs/coverage)
+[![Code Climate](https://codeclimate.com/github/NiyazSerazetdinov/pdp-domain-blogs/badges/gpa.svg)](https://codeclimate.com/github/NiyazSerazetdinov/pdp-domain-blogs)
 
 Rails Base is the base Rails application template used at Flatstack.
 It's based on Rails 4 and Ruby 2.3.0.
@@ -92,10 +102,10 @@ brew bundle
 
 ### Bootstrap application
 
-1. Clone application as new project with original repository named "rails-base".
+1. Clone application as new project with original repository named "pdp-domain-blogs".
 
    ```bash
-   git clone git://github.com/fs/rails-base.git --origin rails-base [MY-NEW-PROJECT]
+   git clone git@github.com:NiyazSerazetdinov/pdp-domain-blogs.git --origin pdp-domain-blogs [MY-NEW-PROJECT]
    ```
 
 2. Create your new repo on GitHub and push master into it. Make sure master branch is tracking origin repo.
@@ -147,16 +157,8 @@ Out of the box Rails Base ready to be deployed to [Heroku.com](http://heroku.com
 
 ```bash
 heroku create --addons=heroku-postgresql,sendgrid,newrelic,rollbar --remote staging rails-base-example
-heroku config:add HOST="rails-base-example.herokuapp.com" MAILER_SENDER_ADDRESS="noreply@rails-base-example.herokuapp.com" NEW_RELIC_APP_NAME="Rails Base"
+heroku config:add HOST="pdp-domain-blogs.herokuapp.com" MAILER_SENDER_ADDRESS="noreply@pdp-domain-blogs.herokuapp.com" NEW_RELIC_APP_NAME="PDP Domain Blogs"
 git push staging master
 heroku run rake db:schema:load
 heroku open
 ```
-
-## Credits
-
-Rails Base is maintained by [Timur Vafin](http://github.com/timurvafin).
-It was written by [Flatstack](http://www.flatstack.com) with the help of our
-[contributors](http://github.com/fs/rails-base/contributors).
-
-[<img src="http://www.flatstack.com/logo.svg" width="100"/>](http://www.flatstack.com)
